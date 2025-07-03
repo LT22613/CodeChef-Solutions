@@ -7,6 +7,7 @@
 # If the string has length n, then there are n-1 spaces, and we can take away the number of occurences of 01 and 10 to leave the number of times we have 00
 # or 11.
 
+# Ask for the number of trials t as input.
 t = int(input())
 
 # Setup a while loop that runs for all test cases.
@@ -15,11 +16,13 @@ while t > 0:
     n = int(input())
     # Take in s as the binary string.
     s = input()
-    # Count the number of times 00 appears in s.
+    # Count the number of times 01 appears in s.
     counter_1 = int(s.count("01"))
-    # Count the number of times 11 appears in s.
+    # Count the number of times 10 appears in s.
     counter_2 = int(s.count("10"))
-    # Print out the number of times both things
-    print(n - 1 -(counter_1 + counter_2))
+    # Deduce the number of spaces a number is needed to be placed and print.
+    moves_needed = n - 1 -(counter_1 + counter_2)
+    # Print the number of moves needed.
+    print(moves_needed)
     # Reduce the counter so that the code stops running once all tests have been run.
     t -= 1
