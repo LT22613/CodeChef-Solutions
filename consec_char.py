@@ -1,5 +1,7 @@
-# Interesting, if we consider 11110100 - this is a string of length 8. In such a string there are 7 gaps between the numbers.
-# It is where the consecutive numbers are 10 or 01 that we do not need to place a number to defy consecutiveness.
+# Difficulty 879
+
+# Consider 11110100 as a string of length 8. In such a string there are 7 gaps between the numbers.
+# It is where the consecutive numbers are 10 or 01 that we do not need to place a number to combat consecutiveness.
 # The count function doesn't count overlapping numbers of the same type - but by definition, you can't have two 10s in a row as otherwise 
 # you'd have two 1s in a row...
 

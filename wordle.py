@@ -1,3 +1,5 @@
+# Difficulty 804
+
 """
 Chef invented a modified wordle.
 

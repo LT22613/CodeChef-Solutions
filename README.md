@@ -1,2 +1,2 @@
 # CodeChef-Solutions
-Solutions to CodeChef Solutions
+Solutions to CodeChef Problems.

@@ -1,3 +1,5 @@
+# Difficulty 801
+
 """
 For encoding an even-length binary string into a sequence of A, T, C, and G, we iterate from left to right and replace the characters as follows:
 
