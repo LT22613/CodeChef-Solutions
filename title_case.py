@@ -1,3 +1,5 @@
+# Difficulty 900
+
 # Convert all words into title case except for those that are already in upper case.
 
 def main():

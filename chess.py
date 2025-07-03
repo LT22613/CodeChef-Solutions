@@ -1,3 +1,5 @@
+# Difficulty 935
+
 """
 14 classical games are played out between Carlsen and Chef.
 The total prize money is 100*x.

@@ -1,14 +1,13 @@
-# Difficulty 
+# Difficulty 940
 
-# Basically this is a huge number.
 
-# So, interesting - if the number is 999, then the number becomes 1000.
+# Consider if the number is 999, then the number becomes 1000.
 # If the number is 899, then the number becomes 900.
-# If the number is 8999.
+# If the number is 8999, it becomes 9000.
 # If the number is 8989 - It becomes 8990.
 
-# So if the number has a string of x 9s at the end, then the number is the first n-x-1 digits
-# and then the remainder of the number is x+1 digits where the last digits are 0s and the x+1th digit
+# So if the number has a string of x 9s at the end, then we can consider first the slice of the number that is the first n-x-1 digits
+# and then the end slice of the number which is the remaining x+1 digit. When converting the number, the last digits will become 0s and the x+1th digit
 # from the end is increased by 1 (it is by definition not 9 as we have defined the digits like that.)
        
     
