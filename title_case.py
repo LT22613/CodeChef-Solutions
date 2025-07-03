@@ -27,6 +27,6 @@ def convert():
     # We want a space between each element, so we write ' ' and then call .join(s)
     return ' '.join(s)
         
-
+# Only call main() if this is the main file being run.
 if __name__ == "__main__":
     main()
