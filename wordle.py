@@ -11,6 +11,8 @@ If the guess at the ith index is wrong, the ith character of M is B.
 
 Given the hidden word S and guess T, determine string M.
 """
+# Import the sys module
+import sys
 
 # Take t as input.
 def main():
@@ -24,22 +26,27 @@ def main():
     
     
 def modified_wordle():
-    # Initialise an empty string called output.
-    output = ""
-    # Take the hidden word, S, as input.
-    hidden = input()
-    # Take the guess word, T, as input.
-    guess = input()
-    # Zip the two lists of letters of each word and iterate through each pair.
-    for a,b in zip(hidden, guess):
-        # If the letters match, concatenate G to the output string.
-        if a == b:
-            output += "G"
-        # If the letters do not match, concatenate B to the output string.
-        else:
-            output += "B"
-    # Return the final output string.
-    return output
+    # Execute the try block and catch any exceptions with the except block.
+    try:
+        # Initialise an empty string called output.
+        output = ""
+        # Take the hidden word, S, as input.
+        hidden = input()
+        # Take the guess word, T, as input.
+        guess = input()
+        # Zip the two lists of letters of each word and iterate through each pair.
+        for a,b in zip(hidden, guess):
+            # If the letters match, concatenate G to the output string.
+            if a == b:
+                output += "G"
+            # If the letters do not match, concatenate B to the output string.
+            else:
+                output += "B"
+        # Return the final output string.
+        return output
+    # If there is an End of File Error, exit gracefully with sys.exit()
+    except EOFError:
+        sys.exit()
 
 # Only call main() if this is the main file being run.
 if __name__ == "__main__":
